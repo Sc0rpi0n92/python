@@ -1,10 +1,18 @@
 list = [7, 5, 3, 3, 2]
 print(f"Рейтинг - {list}")
 while True:
+    try:
+        list_upd = int(input("Enter a number (111 to break): "))
+        break
+    except ValueError:
+        print("NaN, try again: ")
+        
+'''while True:
     list_upd = input("Enter a number (111 to break) ") #input check
     if list_upd.isdigit():
         list_upd = int(list_upd) #str to int
-        break
+        break'''
+
 while list_upd != 111:
     for el in range(len(list)):
         if list[el] == list_upd:
@@ -17,8 +25,16 @@ while list_upd != 111:
         elif list[el] > list_upd and list[el + 1] < list_upd:
             list.insert(el + 1, list_upd)
     print(f"Current list - {list}")
+    
     while True:
+    try:
+        list_upd = int(input("Enter a number (111 to break): "))
+        break
+    except ValueError:
+        print("NaN, try again: ")
+        
+    '''while True:
         list_upd = input("Enter a number (111 to break) ")  # input check
         if list_upd.isdigit():
             list_upd = int(list_upd)  # str to int
-            break
+            break'''

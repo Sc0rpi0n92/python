@@ -1,0 +1,4 @@
+Sokolov, 35000
+Orlov, 13000
+Sorokin, 12000
+Drozdov, 24000
